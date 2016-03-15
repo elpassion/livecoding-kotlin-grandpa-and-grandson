@@ -1,6 +1,12 @@
 package com.elpassion.genealogical.javaimpl;
 
-public class FatherNameDisplayer {
+interface Person {
+
+    Person getFather();
+    String getName();
+}
+
+class FatherNameDisplayer {
 
     public String display(Person person) {
         Person father = person.getFather();
