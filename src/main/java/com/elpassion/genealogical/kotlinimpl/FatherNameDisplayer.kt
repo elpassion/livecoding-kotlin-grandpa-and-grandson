@@ -8,8 +8,5 @@ interface Person {
 
 class FatherNameDisplayer {
 
-    fun display(person: Person): String {
-
-        return "Name not known"
-    }
+    fun display(person: Person) = person.father?.name ?: "Name not known"
 }
